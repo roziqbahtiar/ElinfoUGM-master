@@ -1,0 +1,43 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+kd                                                                0x0260       4
+ki                                                                0x0264       4
+propotional                                                       0x0268       2
+integral                                                          0x026A       2
+derivative                                                        0x026C       4
+currentPosition                                                   0x0270       2
+targetPosition                                                    0x0272       2
+previousError                                                     0x0274       2
+output                                                            0x0276       2
+whiteMin                                                          0x0278       8
+blackMax                                                          0x0280       8
+middleVal                                                         0x0288       8
+_base_y                                                           0x0290       4
+_lcd_x                                                            0x0294       1
+_lcd_y                                                            0x0295       1
+_lcd_maxx                                                         0x0296       1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+eeMaxSpeed                                                        0x0000       1
+eeMinSpeed                                                        0x0001       1
+eeKp                                                              0x0002       2
+eeKd                                                              0x0004       4
+eeKi                                                              0x0008       4
+eeWhiteMin                                                        0x000C       8
+eeBlackMax                                                        0x0014       8
+eeMiddleVal                                                       0x001C       8
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+maxSpeed                                                          R5           1
+minSpeed                                                          R4           1
+speedStep                                                         R7           1
+kp                                                                R8,R9        2
+error                                                             R10,R11      2
+errorDiff                                                         R12,R13      2
+sensor                                                            R6           1
+lineColorFlag                                                     R2.0      1bit
